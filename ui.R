@@ -6,6 +6,7 @@ shinyUI(fluidPage(
     sidebarLayout(
         # Left panel with option of graphs
         sidebarPanel(
+            h1("Choose one of the graph type"),
             #choose one of the graphs to visualize the data
             checkboxInput("correlationPlot","Show/Hide correlationPlot", value=TRUE),
             checkboxInput("boxplot", "Show/Hide boxplot", value=TRUE)

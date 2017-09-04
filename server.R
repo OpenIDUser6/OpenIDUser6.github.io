@@ -17,4 +17,5 @@ shinyServer(function(input, output)
             featurePlot(x=iris[,1:4],y=iris[,5],plot="pairs")
         }
     })
-})
+)
+

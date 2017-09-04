@@ -1,0 +1,44 @@
+---
+title: "Course Project: Shiny Application and Reproducible Pitch"
+author: "Tingfen Yan"
+date: "9/3/2017"
+output: ioslides_presentation
+---
+##Course Project
+  -This is the final presentation for the Course Project of the "Development data products" course
+  
+  -This project includes two activities:
+   
+   1. Create a Shiny application
+  
+   2. Create a presentation in Slidify or Rstudio Presenter to pitch for the application.
+
+##Shiny application
+  -explore data set by two different graphs
+  
+  -one is box plot and one is feature plot
+  
+  -I am using iris dataset to finish this assignment
+
+Some information for this dataset
+```{r echo=FALSE}
+data(iris)
+head(iris)
+```
+
+##graphs
+-feature plot
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+library(caret)
+```
+
+```{r echo=FALSE}
+featurePlot(x=iris[,1:4],y=iris[,5],plot="pairs")
+```
+
+The plot colored by species
+
+##Data
+  -The app developed for the first part of the assignment demo is avalilable at: http://rpubs.com/yanRpubs/304193
+
+  -Source code for ui.R and server.R files are available on the GitHub repo: https://github.com/OpenIDUser6/OpenIDUser6.github.io
